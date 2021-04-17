@@ -3,9 +3,9 @@
 @section('content')
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-         <a href="{!! route('coins.index') !!}">Coins</a>
+         <a href="{!! route('coins.index') !!}">Moedas</a>
       </li>
-      <li class="breadcrumb-item active">Create</li>
+      <li class="breadcrumb-item active">Nova</li>
     </ol>
      <div class="container-fluid">
           <div class="animated fadeIn">
@@ -15,7 +15,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <i class="fa fa-plus-square-o fa-lg"></i>
-                                <strong>Create Coins</strong>
+                                <strong>Criar nova moeda</strong>
                             </div>
                             <div class="card-body">
                                 {!! Form::open(['route' => 'coins.store']) !!}

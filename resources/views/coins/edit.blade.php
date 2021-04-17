@@ -3,9 +3,9 @@
 @section('content')
     <ol class="breadcrumb">
           <li class="breadcrumb-item">
-             <a href="{!! route('coins.index') !!}">Coins</a>
+             <a href="{!! route('coins.index') !!}">Moedas</a>
           </li>
-          <li class="breadcrumb-item active">Edit</li>
+          <li class="breadcrumb-item active">Editar</li>
         </ol>
     <div class="container-fluid">
          <div class="animated fadeIn">
@@ -15,7 +15,7 @@
                       <div class="card">
                           <div class="card-header">
                               <i class="fa fa-edit fa-lg"></i>
-                              <strong>Edit Coins</strong>
+                              <strong>Editar moedas</strong>
                           </div>
                           <div class="card-body">
                               {!! Form::model($coins, ['route' => ['coins.update', $coins->id], 'method' => 'patch']) !!}
